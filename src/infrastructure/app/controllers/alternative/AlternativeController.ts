@@ -5,7 +5,7 @@ import ipClient from 'ip'
 // @deno-types="npm:@types/geoip-lite"
 import geoip from 'geoip-lite'
 import axios from 'axios'
-import { URL_GEO } from '../../../utils/constants/Server.constant.ts'
+import { URL_GEO } from "@infrastructure/utils/constants/Server.constant.ts"
 
 export default class AlternativeController {
     constructor() {}
@@ -14,11 +14,12 @@ export default class AlternativeController {
         try {
             const sentIp = ipClient.address('public', 'ipv4')
             const responseAxios = await axios.get(`${URL_GEO}&ip_address=${sentIp}`)
-            geoip.lookup(sentIp)
+            const resGeo = geoip.lookup(sentIp)
             return res.status(200).json({
                 ok: true,
                 myIp: `This is your IP ${req.ip}`,
                 sentIp: `This is your IP ${sentIp}`,
+                resGeo,
                 infoIp: responseAxios
             })
         } catch (error) {
