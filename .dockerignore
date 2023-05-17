@@ -1,0 +1,6 @@
+/tests
+/.vscode
+.env
+.env.example
+README.md
+LICENSE

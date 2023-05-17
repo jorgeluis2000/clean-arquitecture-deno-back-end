@@ -1,0 +1,16 @@
+{
+    "imports": {
+        "express": "npm:express",
+        "express/types": "npm:@types/express",
+        "request-ip": "npm:request-ip",
+        "ip": "npm:ip",
+        "axios": "npm:axios",
+        "geoip-lite": "npm:geoip-lite",
+        "mongoose": "npm:mongoose",
+        "mongodb": "https://deno.land/x/mongo@v0.31.2/mod.ts",
+        "dotenv": "https://deno.land/x/dotenv@v3.2.2/mod.ts",
+        "@domain/": "./src/domain/",
+        "@application/": "./src/application/",
+        "@infrastructure/": "./src/infrastructure/"
+    }
+}

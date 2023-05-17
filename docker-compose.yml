@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  deno-backend:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: deno-backend
+    env_file: .env
+    ports:
+      - '3155:3155'

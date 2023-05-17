@@ -1,0 +1,8 @@
+{
+    "tasks": {
+        "start:dev": "deno run --watch=src/ --allow-read --allow-env --allow-net --allow-sys src/app.ts",
+        "start": "deno run --allow-read --allow-env --allow-net --allow-sys src/app.ts",
+        "start:all": "deno run -A src/app.ts"
+    },
+    "importMap": "./import_map.json"
+}
