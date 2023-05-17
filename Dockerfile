@@ -10,4 +10,4 @@ ADD . .
 
 # RUN deno cache src/app.ts
 
-CMD ["task", "start"]
+CMD ["task", "start:all"]
