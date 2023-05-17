@@ -1,6 +1,6 @@
 {
     "imports": {
-        "express": "npm:express",
+        "express": "https://esm.sh/express",
         "express/types": "npm:@types/express",
         "request-ip": "npm:request-ip",
         "ip": "npm:ip",

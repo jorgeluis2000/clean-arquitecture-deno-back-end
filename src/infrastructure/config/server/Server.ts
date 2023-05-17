@@ -1,4 +1,4 @@
-// @deno-types="npm:express/types"
+// @deno-types="npm:@types/express"
 import express from 'express'
 // @deno-types="npm:@types/request-ip"
 import requestIP from 'request-ip'

@@ -1,4 +1,4 @@
-FROM denoland/deno:latest
+FROM denoland/deno
 
 # EXPOSE 3155
 
@@ -8,6 +8,6 @@ USER deno
 
 ADD . .
 
-# RUN deno cache src/app.ts
+RUN deno cache src/app.ts
 
 CMD ["task", "start:all"]
